@@ -1,0 +1,56 @@
+@import "index";
+
+.features_section {
+  background-image: url("../content/section2-background.jpg");
+  background-size: cover;
+  margin-top: -28px;
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .features_section_content {
+
+    .features_col {
+
+      @media screen and (max-width: 600px) {
+        display: contents;
+      }
+    }
+
+    .section_content_style;
+
+    .features_section_content_heading {
+      margin-bottom: 86px;
+      margin-top: 130px;
+      width: 100%;
+
+      h1{
+        font-size: 40px;
+        .headline_font-style;
+      }
+    }
+
+    .features_section_content-item {
+      padding-bottom: 133px;
+
+      @media screen and (max-width: 600px) {
+        padding-bottom: 40px;
+
+        width: inherit;
+        font-size: 13px;
+      }
+
+      .features_section_content-item_icon{
+        margin-bottom: 20px;
+      }
+
+      .feature_section_content-item_text-headline{
+        font-size: 22px;
+        letter-spacing: 1px;
+        .headline_font-style;
+      }
+    }
+  }
+}

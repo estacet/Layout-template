@@ -1,0 +1,138 @@
+@import "index";
+
+footer {
+  .section_background;
+  background-size: 80%;
+  background-position: 368% 81%;
+  background-repeat: no-repeat;
+
+  .flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 7% 22% 7% 7%;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 900px) and (min-width: 650px) {
+      justify-content: space-between;
+    }
+
+    .footer_content_logo {
+
+      .white_text {
+        color: white;
+      }
+      .footer_content_logo-headline {
+        margin-top: 8px;
+
+        font-size: 27px;
+        line-height: 50px;
+        color: #212126;
+        font-family: Lato, sans-serif;
+        font-weight: 400;
+
+        background-image: url("../content/footer_logo.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 64px;
+      }
+
+      .content-item_text;
+    }
+
+    .footer_content-item {
+
+      .footer_content-item_text-headline {
+        margin-top: 8px;
+
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-family: @main-font;
+        .headline_font-style;
+      }
+
+      .content-item_text;
+
+      .footer_content-item_form_row {
+        margin-top: 30px;
+
+        .form-control {
+          width: 210px;
+          height: 49px;
+
+          border-radius: 3px;
+          background-color: #f6f6f6;
+
+          &::placeholder{
+            color: #b9b9b9 !important;
+            text-transform: uppercase;
+          }
+
+          @media screen and (max-width: 500px) {
+            width: 200px;
+          }
+
+          @media screen and (max-width: 350px) {
+            width: 170px;
+          }
+        }
+        .footer_content-item_form_button {
+          width: 52px;
+          height: 49px;
+
+          font-size: 22px;
+          color: white;
+
+          border: 0;
+          border-radius: .25rem;
+          background-color: @text-red;
+        }
+
+        .icon-send {
+          font-size: 22px;
+          color: white;
+
+          &:hover {
+            color: #d9d9d9;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .footer_content-item_form__confirmation-message {
+        .confirmation;
+        font-size: 18px;
+      }
+
+      .footer_social_icons {
+        margin-top: 18px;
+
+        max-width: 260px;
+
+        font-size: 22px;
+        color: #d9d9d9;
+
+        .footer_social_icon {
+
+          &:hover {
+            color: #a1adb7;
+
+            transform: scale(1.2);
+            cursor: pointer;
+          }
+        }
+      }
+      .flex-container {
+        @media screen and (max-width: 700px) {
+          flex-direction: inherit;
+        }
+      }
+  }
+    .footer_side-item {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

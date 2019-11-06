@@ -1,0 +1,101 @@
+@import "index";
+
+.contacts_section {
+  background-color: #323969;
+  text-align: center;
+
+  .contacts_section_content {
+    padding: 110px 0 80px;
+
+    .contacts_section_content_text-headline {
+      font-size: 40px;
+      color: #ffffff!important;
+      .headline_font-style;
+
+      @media screen and (max-width: 800px) {
+        font-size: 34px;
+      }
+    }
+
+    .contacts_section_content_form {
+      margin: 110px 0 46px;
+      .contacts_section_content_form-row {
+        flex-wrap: unset;
+
+        .contacts_section_content_form-item {
+          padding: 3%;
+          display: inline-flex;
+
+          @media screen and (max-width: 1450px) {
+            padding: 2%;
+          }
+
+          @media screen and (max-width: 1420px) {
+            padding: 1.5%;
+          }
+
+          .form-control {
+            .form-size;
+
+            padding-left: 30px;
+
+            font-size: 16px;
+            letter-spacing: 1px;
+            line-height: 75px;
+            font-family: @main-font;
+            font-weight: 400;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #f6f5f3;
+
+            border: 0;
+
+            &:hover {
+              border: 1px solid #ffffff;
+            }
+
+            @media screen and (max-width: 1418px) {
+              margin: 10px;
+            }
+
+            .placeholder;
+          }
+        }
+        .contacts_section_content_form_button_wrapper {
+
+          @media screen and (max-width: 1418px) {
+            margin: 10px;
+          }
+
+          .contacts_section_content_form_button {
+            .continue_button;
+            .centered;
+            .form-size;
+
+            float: left;
+            font-size: 15px;
+            letter-spacing: 1px;
+            line-height: 50px;
+            color: #f6f5f3;
+            font-family: @main-font;
+            font-weight: 400;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .contacts_section_content_confirmation-message {
+      .confirmation;
+    }
+  }
+
+  .contacts_note {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #f6f5f3;
+    font-weight: 400;
+  }
+}

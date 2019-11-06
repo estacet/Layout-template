@@ -1,0 +1,37 @@
+@import "index";
+
+.browser_section{
+  background-color: #f6f5f3;
+
+  .browser_section_content {
+    text-align: center;
+
+    .browser_section_content-item {
+      padding: 110px 0;
+
+      @media screen and (max-width: 800px) {
+        padding: 80px 0;
+      }
+
+      .browser-section_content-item_text-headline {
+        font-size: 40px;
+        .headline_font-style;
+
+        @media screen and (max-width: 800px) {
+          font-size: 34px;
+        }
+      }
+    }
+
+    .browser_section_content_image img{
+      width: 770px;
+      height: 360px;
+      .horizontal-centered;
+
+      @media screen and (max-width: 900px) {
+        width: 86%;
+        height: auto;
+      }
+    }
+  }
+}
