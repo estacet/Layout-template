@@ -47,7 +47,8 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
-                            outputPath: '../fonts/'
+                            outputPath: 'fonts',
+                            publicPath: '../fonts'
                         }
                     }
                 ]
@@ -72,7 +73,7 @@ module.exports = {
 
         new CopyWebpackPlugin([
             {
-                from: './src/fonts', to: './fonts'
+                from: './src/fonts', to: 'fonts'
             },
         ]),
 
